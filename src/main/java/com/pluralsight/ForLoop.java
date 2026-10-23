@@ -3,17 +3,21 @@ package com.pluralsight;
 public class ForLoop {
 
     //!Creating main method
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
-        //*Variable
-        int i = 0;
 
-        //*do while loop to print out I love java
-        do {
-            i++;
-            System.out.println("I love java");
+        //*For loop to print out I love java
+        for ( int i = 10; i >= 1; i-- ) {
 
-        }while (i < 5 );
+            Thread.sleep(1000);
+
+            System.out.println(i);
+
+
+            if (i == 1){
+                System.out.println("Launch!!!");
+            }
+        }
 
 
     }
